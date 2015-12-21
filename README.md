@@ -8,3 +8,5 @@ npm install request
 
 browserify background.js -o background.bundle.js
 
+Demo:
+![alt tag](https://github.com/sbkexperiments/paypalinvoicing/blob/master/demo.png)
