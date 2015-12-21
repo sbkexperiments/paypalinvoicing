@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+        <meta charset="UTF-8">
+    <title>PayPal Invoicing Dashboard App</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+  </head>
+  <body>
+  	<h4><span class="label label-default">PayPal Invoicing Dashboard<span></h4>
+  	<div id="signinDiv">
+  		<p>Please log in with PayPal by clicking the button below. This is a one-time setup.</p>
+  		<button id="signin"><img src="https://www.paypalobjects.com/webstatic/en_US/developer/docs/lipp/loginwithpaypalbutton.png"/></button>
+  	</div>
+
+
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-info" style="min-width:200px;" data-invoice="all-count"><b>ALL</b> <span class="badge">0</span></li>
+      <li class="list-group-item list-group-item-info" data-invoice="all-amount">0 USD</li>
+
+      <li class="list-group-item list-group-item-success" data-invoice="paid-count"><b>PAID</b> <span class="badge">0</span></li>
+      <li class="list-group-item list-group-item-success" data-invoice="paid-amount">0 USD</li>
+
+      <li class="list-group-item list-group-item-warning" data-invoice="outstanding-count"><b>OUTSTANDING</b> <span class="badge">0</span></li>
+      <li class="list-group-item list-group-item-warning" data-invoice="outstanding-amount">0 USD</li>
+
+      <li class="list-group-item list-group-item-danger" data-invoice="overdue-count"><b>OVERDUE</b> <span class="badge">0</span></li>            
+      <li class="list-group-item list-group-item-danger" data-invoice="overdue-amount">0 USD</li>
+    </ul>
+
+    <a id="switchUser">Switch User</a>
+  </body>
+</html>
